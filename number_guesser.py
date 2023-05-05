@@ -15,7 +15,9 @@ else :
 random_number = random.randint(0, top_of_range)
 print(random_number)
 
+guesses = 0 
 while True : 
+        guesses += 1
         user_guess = input("Make a guess : ")
 
         if user_guess.isdigit(): 
@@ -28,4 +30,9 @@ while True :
               print("You got it ! Congratulations")
               break
         else :
-              print("Wrong ! Try again")
+              if user_guess > random_number : 
+                print("You need to decrease !")
+              else:
+                print("You need to increase")
+
+print ("You got it in", guesses, "try")
