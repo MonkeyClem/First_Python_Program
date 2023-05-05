@@ -13,9 +13,9 @@ else :
       quit()
 
 random_number = random.randint(0, top_of_range)
-print(random_number)
-
+# print(random_number)
 guesses = 0 
+
 while True : 
         guesses += 1
         user_guess = input("Make a guess : ")
@@ -27,12 +27,9 @@ while True :
             continue #Renvoie au début la boucle 
 
         if user_guess == random_number : 
-              print("You got it ! Congratulations")
-              break
-        else :
-              if user_guess > random_number : 
-                print("You need to decrease !")
-              else:
-                print("You need to increase")
-
-print ("You got it in", guesses, "try")
+                print ("You got it in", guesses, "try")              
+                break
+        elif  user_guess > random_number : 
+                print("Let's go down !")
+        else:
+                print("You need to go up !")
