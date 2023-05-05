@@ -34,4 +34,5 @@ if answer.lower() == "ultimate fighting championship":
                 score += 1 
 else : print("INCORRECT !!!")
 
-print("You got" + str(score) + "question(s) correct")
+print("You got " + str(score) + " question(s) correct")
+print("You got " + str((score / 4) *100) + " %.")
