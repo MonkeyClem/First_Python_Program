@@ -1,6 +1,6 @@
 import random
 
-top_of_range = input("Please type a number")
+top_of_range = input("Please type a number : ")
 
 if top_of_range.isdigit(): 
     top_of_range = int(top_of_range); 
@@ -12,4 +12,5 @@ else :
       print("Please type a number next time")
       quit()
 
-random_number = random.randint(top_of_range)
+random_number = random.randint(0, top_of_range)
+print(random_number)
